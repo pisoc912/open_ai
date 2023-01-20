@@ -1,5 +1,5 @@
-import bot from './assets/bot.svg'
-import user from './assets/user.svg'
+import bot from './assets/bot.svg';
+import user from './assets/user.svg';
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
@@ -24,7 +24,7 @@ function typeText(element, text) {
     let interval = setInterval(() => {
         if (index < text.length) {
             element.innerHTML += text.charAt(index)
-            index++
+            index++;
         } else {
             clearInterval(interval)
         }
@@ -75,7 +75,7 @@ const handleSubmit = async (e) => {
 
     loader(messageDiv)
 
-    const response = await fetch('https://codex-im0y.onrender.com/', {
+    const response = await fetch('https://codex-6cfk.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
